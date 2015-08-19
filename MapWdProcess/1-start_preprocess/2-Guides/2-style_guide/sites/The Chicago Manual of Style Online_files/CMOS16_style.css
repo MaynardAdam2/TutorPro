@@ -1,0 +1,1808 @@
+/*----------------------------------
+  The Chicago Manual of Style Online
+  
+  Stylesheet by Michael Boudreau
+ 
+  Modified by Aiping Zhang
+  ----------------------------------*/
+body {
+  color:#000000; 
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  margin: 0;
+  padding: 0;
+}
+body.ch12 #main_content { /* "Mathematics in Type" */
+  font-family: Georgia, Times, "Times Roman", serif;
+}
+#main_content h1 {  /* home page header */
+  display: none;
+}
+body.support div#main_content p {
+    word-break: break-all;
+    -ms-word-break: break-all;
+}
+
+img {
+  border: none;
+}
+span.label {
+  /*font-weight: bold;*/
+}
+span.sc {
+  font-variant: small-caps; 
+}
+html>body #site_wrapper {
+  padding: 0;
+  min-width: 1000px;
+  min-height: 600px;
+  border: 0px red solid;
+}
+
+/* header part */
+#header {
+  /*background: url(http://www.chicagomanualofstyle.org/images/header_bg.gif) repeat-x;*/
+  height: 103px;
+  width: 100%;
+  border-bottom: 3px #84b8c6 solid; 
+}
+
+#header #logo {
+  border: 0px solid red;
+}
+#header #logo a {
+   text-decoration: none;
+}
+#header #logo img {
+  margin: 0 0 0 0;
+}
+
+html>body #header #search {
+  float: right;
+  margin: -20px 19px 0 0;
+}
+#search form {
+  margin: 0;
+  padding: 0;
+}
+#search input {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+#search div.search_radio_button table {
+  margin-top: 6px;
+}
+#search div.search_radio_button table tr td {
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;
+  font-style: normal; 
+  font-size: 11px;
+  color: #626f74;
+  vertical-align: middle;
+}
+
+
+/* account */
+#account {
+  color: #0bb3d0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  text-align: right;
+  margin: 0px 19px 0 136px;
+  padding-top: 12px;
+}
+#account a {
+  color: #626f74;
+  text-decoration: none;
+}
+#account a:hover,
+#account a:active {
+  border-bottom: solid 1px #ff0099;
+}
+
+#account a.renew  {
+  color: #626f74;
+  border-bottom: dotted 1px #ff0099;
+  text-decoration: none;
+}           
+#account a.renew:hover,
+#account a.renew:active {
+  border-bottom: solid 1px #ff0099;
+}
+
+/* end of header part */
+
+
+html>body #content_wrapper {
+  background: url(../images/nav_bg.gif) repeat-y;
+  position: relative;
+  width: 100%;
+}
+
+
+/* left navigation part */
+
+#navigation {
+  float: left;
+  width: 136px;
+}
+#navigation img.new {
+  margin: 33px 0 0 86px;
+}
+#navigation ul {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 150%;
+  list-style-type: none;
+  margin-left: 30px;
+  padding: 0;
+}
+#navigation ul#part_1 {
+  margin-top: 36px;
+  margin-right: 10px;
+}
+#navigation ul#part_2 {
+  margin-top: 20px;
+}
+
+#navigation li {
+  margin: 0 0 12px 0;
+  padding: 0;
+}
+
+#navigation a {
+  border-bottom: dotted 0px #666;
+  color: #626f74;
+  text-decoration: none;
+}
+
+
+#navigation a.selected {
+  color: #ff0099;
+}
+#navigation a:hover {
+  border-bottom: solid 0px #FF6A00;
+  color: #ff0099;
+  text-decoration: none;
+}
+#navigation form#para_search {
+  font-family: Verdana;
+  margin: 20px 0 0 30px;
+  padding: 0;
+}
+#navigation form#para_search label {
+  color: #626f74;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+}
+#navigation form#para_search input {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+#navigation form#para_search input#go {
+  margin-left: -4px;
+}
+
+/* end of left navigation part */
+
+
+#site_menu {
+  width: 676px;
+  height: 24px;
+  margin: 0 0 0 136px;
+  border-bottom: 1px dotted #B0B0B0;
+}
+#site_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#main_content #site_menu ul li {
+  list-style-image:url();
+  float: left;
+}
+#site_menu a {
+  display: block;
+  text-decoration: none;
+}
+#site_menu img {
+  display: block;
+}
+
+.search #site_menu li a {
+    padding: 6px;
+    border-top: 1px solid #B0B0B0;
+    border-left: 1px solid #B0B0B0;
+    border-right: 1px solid #B0B0B0;
+    background: #f1eee5;
+    margin-left: 13px;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    height: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.search #site_menu li a.selected {
+    background: white;
+    height: 12px;
+}
+
+.search #site_menu li a:hover {
+    background: white;
+    height: 12px;
+    border-bottom: none;
+}
+
+.search #main_content .search-results {
+    width: 674.3px;
+    border-bottom: 1px dotted #B0B0B0;
+    border-left: 1px dotted #B0B0B0;
+    border-right: 1px dotted #B0B0B0;
+}
+.search #main_content .search-result-table,
+.search #main_content .top_nav_bar {
+    width: 676px;
+    border-left: 1px dotted #B0B0B0;
+    border-right: 1px dotted #B0B0B0;
+    margin-bottom: 1px;
+}
+
+.search #main_content .forum-result-table {
+    width: 676px;
+    border-left: 1px dotted #B0B0B0;
+    border-right: 1px dotted #B0B0B0;
+}
+.search #main_content p.g {
+    margin-left: 13px;
+}
+.search #main_content .search-result-table .sep_bar_text_css {
+    margin-left: 14px;
+}
+.search #main_content .forum-result-table .sep_bar_text_css {
+    margin-top: 20px;
+    padding-left: 15px;
+}
+span.search_page_nav {
+    margin-left: 8px;
+}
+
+#main_content span.emptyresult {
+    display: inline-block;
+    margin-top: 17px;
+    margin-left: 15px;
+}
+
+#main_content div.no-result {
+    width: 676px;
+    border-bottom: 1px dotted #B0B0B0;
+    border-left: 1px dotted #B0B0B0;
+    border-right: 1px dotted #B0B0B0;
+}
+#main_content {
+  border: solid 0px white;
+  margin: 0 143px 0 148px;
+  position: relative;
+  min-height: 430px;
+
+}
+
+#main_content a:visited {
+  color: #bb4b81;
+}
+
+/* body.aux2 pages */
+#inner_wrapper {
+  /*margin: 0;*/
+  padding: 0;
+  width: 100%;
+}
+#main_left {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 48%
+}
+#main_right {
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 48%;
+}
+
+
+
+/* body.aux part */
+body.aux #main_content ul {
+  color:#000000;
+  font-family:TisaWebPro,Times Roman,Times,Georgia,serif;
+  font-size:15px;
+  font-style:normal;
+  font-weight:normal;
+  line-height:1.35em;
+  list-style-type: disc;
+}
+body.aux #main_content ul.nobullet {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 0 0;
+  text-indent: 0;
+}
+
+body.aux #main_content ul.nobullet li {
+  list-style-image:url();
+}
+
+body.aux #main_content ul.nobullet ul {
+  list-style-type: none;
+  margin-left: -22px;
+  text-indent: 0;
+}
+body.aux #main_content ul.fix_square_bullets li {
+  list-style-type: none;
+  margin-left: -24px;
+}
+body.aux #main_content h2 i {
+  font-style: normal; /* added */
+}
+body.aux #main_content h3 {
+  margin-bottom: 6px;
+  padding: 0;
+  }
+body.aux #main_content h4 {
+  margin: 6px 0 0 0;
+  padding: 0;
+  font-size: 15px;
+}
+body.aux #main_content div.example {
+  margin: 0.5em 0;
+}
+body.aux #main_content p.question {
+  color:#000000; 
+  font-weight: bold;
+  margin: 1.5em 0 0 0;
+}
+body.aux #main_content p.answer {
+  margin: 0 0 0.5em 0;
+}
+body.aux #main_content form.emailform {
+  margin-top: 1.5em;
+}
+body.aux #main_content form.emailform label {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #626f74;
+  font-size: 9px;
+  font-weight: bold;
+  font-style: Caps;
+  letter-spacing: 2px;
+  display: block;
+  margin: 1em 0 0.5em 0;
+}
+body.aux #main_content form.emailform input,
+body.aux #main_content form.emailform textarea {
+  display: block;
+  margin-bottom: 18px;
+}
+body.aux #main_content form.emailform input[type="text"],
+body.aux #main_content form.emailform textarea {
+  width: 400px;
+}
+/* end of body.aux part */
+
+
+/* body.aux2 part */
+body.aux2 #main_content h2 { 
+  margin-bottom: 0px;
+}
+body.aux2 #main_content h3 {
+  margin-bottom: 6px;
+  padding: 0;
+  }
+body.aux2 #main_content h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+body.aux2 #main_content ul.nobullet {
+  margin: 0 0 0 1em;
+  padding: 0;
+  text-indent: -1em;
+  list-style-type: none;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;  /* added */
+  font-style: normal; /* added */
+  font-size: 15px;
+  line-height: 1.35em;
+}
+
+body.aux2 #main_content ul.nobullet li {
+ list-style-image:url();
+}
+
+/* end of body.aux2 part */
+
+
+/* main_content chapter title part */
+html>body #main_content h2,
+html>body #main_content h3#chap {
+  color: #0bb3d0;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: bold; /* added */
+  font-style: italic; /* added */
+  font-size: 22px;
+  margin-top: 12px;
+  /*margin: 12px 0 0 0;*/
+  line-height: 110%;
+}
+#main_content h3#chap a {
+  border: none;
+  color: #0bb3d0;
+  text-decoration: none;
+}
+#main_content h3#chap a:hover {
+  border: none;
+}
+
+/* end of main_content chapter title part */
+
+
+/* main_content trail part */
+
+#main_content p#trail {
+  line-height: 150%;
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+#main_content p#trail a {
+  color:#626f74; 
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1.5em;
+}
+#main_content p#trail a:active,
+#main_content p#trail a:hover {
+  color: #ff0099;
+  border-bottom: none;
+}
+
+/* end of main_content trail part */
+
+
+/* main_content paragraph nav part */
+
+#main_content p.nav,
+#main_content p.nav_bottom {
+  margin: 18px 0 16px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  height: 17px;
+  border: 0px red solid;
+}
+#main_content p.nav a,
+#main_content p.nav_bottom a {
+  color: #b4d433;
+  border-bottom: none;
+}
+#main_content p.nav a:hover,
+#main_content p.nav_bottom a:hover {
+  border-bottom: none;
+  color: #ff0099;
+}
+#main_content p.nav img,
+#main_content p.nav_bottom img {
+  vertical-align: middle;
+}
+
+
+/* end of main_content paragraph nav part */
+
+
+/* main_content para keys part */
+
+html>body #main_content h3,
+html>body #main_content h2#para,
+html>body #main_content h2#figure,
+html>body #main_content h2#table {
+  color:#000000; 
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: bold;  /* added */
+  font-style: normal; /* added */
+  font-size: 15px;
+  line-height: 1.3em;
+  /*margin: 0 0 5px 0;*/
+  margin-bottom: 5px;
+  padding: 0;
+}
+#main_content h2#para .label {
+  padding-right: 15px;
+}
+
+/* main_content para keys part */
+
+
+/* main_content paragraph part */
+
+#main_content p {
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;  /* added */
+  font-style: normal; /* added */
+  color:#000000; 
+  font-size: 15px;
+  line-height: 1.35em;
+  margin: 0 0 1em 0;
+}
+#main_content span.indent {
+  color:#000000;
+  font-size: 15px;
+  line-height: 1.35em;
+  margin: 0 0 1em 0;
+}
+#main_content span.noindent {
+  color:#000000;
+  font-size: 15px;
+  line-height: 1.35em;
+  margin: 0 0 1em 0;
+}
+
+/* might useless
+#main_content ul {
+  font-size: 80%;
+  line-height: 150%;
+}
+#main_content ul ul {
+  font-size: 100%;
+}
+*/
+
+
+/* book toc table */
+html>body #main_content ul#contents {
+  list-style-type: none;
+  margin-left: -39px;
+	}
+html>body #main_content ul#contents li {
+  list-style-image:url();
+}
+html>body #main_content ul#contents span.label { /* 1 */
+  color: #ff0099;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: bold;
+  font-style: italic;
+  padding-right: 0.3em;
+  margin-left: 25px;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+#main_content ul#contents span.author {
+  color: #626f74;
+  font-size: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.25em;
+}
+#main_content ul#contents small {
+  color: #626f74;
+  font-size: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.25em;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+#main_content ul#contents a {
+  color:#000000; 
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  line-height: 1.35em;
+  font-size: 15px;
+}
+#main_content ul#contents a:active,
+#main_content ul#contents a:hover {
+  color: #ff0099;
+  border-bottom: none;
+}
+
+
+/* chapter toc table */
+html>body #main_content ul.chapter_contents li {  /* "Overview" level in ch01_toc.html */
+  list-style-image:url();
+  margin-left: -39px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  line-height: 1.35em;
+  font-size: 14px;
+} 
+html>body #main_content ul.chapter_contents ul.depth_para li { /* "Books and journals as the core of scholarly publishing" level */
+  margin-left: -55px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+html>body #main_content ul.chapter_contents ul.depth_para li span.para_title {
+  position: absolute; left: 84px;
+  white-space: nowrap;
+}
+html>body #main_content ul.chapter_contents ul ul ul.depth_para li span.para_title {
+  position: absolute; left: 138px;
+  white-space: nowrap;
+}
+html>body #main_content ul.chapter_contents span.label { /* "1.1" */
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #ff0099;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+
+html>body #main_content ul.chapter_contents ul li.depth2 { /* "Introduction" level */
+  margin-left: -55px;
+  margin-top: 9px;
+  font-family: TisaWebPro-Medium, Times Roman, Times, Georgia, serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #0bb3d0;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+html>body #main_content ul.chapter_contents ul ul.depth_para li {  /* "Rectos and versos" level */
+  margin-left: -95px;
+}
+html>body #main_content ul.chapter_contents ul ul li.depth2 { /* "Title Pages" level */      
+  margin-left: -36px;
+  color: black;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+html>body #main_content ul.chapter_contents ul ul ul.depth_para li { /* "Half title" level */     
+  margin-left: -76px;
+}
+html>body #main_content ul.chapter_contents li a {
+  border-bottom: none;
+  color: #626f74;
+}
+#main_content ul.chapter_contents li.depth1 a {
+  border-bottom: none;
+  color: black;
+}
+
+html>body #main_content ul.chapter_contents li a:active,
+html>body #main_content ul.chapter_contents li a:hover {
+  color: #ff0099;
+  border-bottom: none;
+}
+
+body #main_content ul.chapter_contents li a:visited {
+  color: #bb4b81;
+}
+
+
+/* biblio toc table */
+/*
+html>body body.biblio #main_content ul.chapter_contents li.depth1 a {  /* Works on Writing and Editing */
+  margin-left: -39px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  list-style-type: none;
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  line-height: 1.35em;
+  font-size: 14px;
+}*/
+
+
+/* the list of figures and tables */
+
+#main_content ul#figures {
+  margin-top: 2em;
+}
+#main_content ul#figures ul {
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+html>body #main_content ul#figures li { /* Books and Journals */
+  list-style-image:url();
+  font-family: TisaWebPro;
+  font-weight: bold;
+  font-style: normal;
+  color: black;
+  list-style-type: none;
+  line-height: 1.35em;
+  font-size: 14px;
+  margin-left: -22px;
+}
+html>body #main_content ul#figures li span.label {  /* 1 */
+  font-family: TisaWebPro;
+  font-weight: bold;
+  font-style: italic; 
+  color: #ff0099;
+  padding-right: 0.5em;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+html>body #main_content ul#figures ul li a.label {  /* 1.1 */
+  font-family: TisaWebPro;
+  font-weight: normal;
+  font-style: italic;
+  color: #ff0099;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+html>body #main_content ul#figures ul li {  /* A typical copyright page */
+  font-family: TisaWebPro;
+  font-weight: normal;
+  font-style: normal;
+  list-style-type: none;
+  line-height: 1.35em;
+  font-size: 14px;
+}
+#main_content ul#figures li a.figure_title {
+  position: absolute; left: 80px;
+  white-space: nowrap;
+}
+#main_content ul#figures li a.table_title {
+  position: absolute; left: 72px;
+  white-space: nowrap;
+}
+#main_content ul#figures li a {
+  color: black;
+}
+#main_content ul#figures li a:active,
+#main_content ul#figures li a:hover {
+  border-bottom: none;
+  color: #ff0099;
+}
+
+
+/*
+#main_content ul#figures li {
+  color: #000000;;
+  margin-top: 0.5em;
+}
+#main_content ul#figures li li {
+  margin-top: 0;
+}
+#main_content ul#figures li.example a {
+  color: #666;
+}
+#main_content ul#figures span.label {
+  color: #FF6A00;
+  font-weight: bold;
+}
+#main_content ul#figures li a {
+  border: none;
+  color: #000000;;
+  text-decoration: none;
+}
+#main_content ul#figures li a.label {
+  border-bottom: dotted 1px #666; 
+  color: #FF6A00;
+}
+#main_content ul#figures li a:hover {
+  border-bottom: solid 1px #FF6A00;
+}
+
+#main_content ul#figures,
+#main_content ul#tables   {
+  list-style-type: none;
+}
+#main_content ul#figures ul,
+#main_content ul#tables ul   {
+  list-style-type: none;
+}
+#main_content ul#tables li.example {
+  color: #666;
+}
+#main_content ul#figures span.label,
+#main_content ul#tables span.label   {
+  color: #FF6A00;
+  font-weight: bold;
+  padding-right: 0.5em;
+}
+*/
+
+
+/* general style */
+#main_content a {
+  border-bottom: dotted 0px #666;
+  color: #ff0099;
+  text-decoration: none;
+}
+#main_content a:hover {
+  border-bottom: solid 1px #ff0099;
+}
+
+body.home #main_content h2 a,
+body.home #main_content h4 a
+{
+  color: #0BB3D0;
+}
+
+body.home #main_content h2 a:hover,
+body.home #main_content h4 a:hover
+{
+    border-bottom: solid 0px #0BB3D0;
+}
+
+/* index */
+#main_content ul.index {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #626f74;
+  line-height: 1.4em;
+}
+#main_content ul.index li {
+  list-style-image:url();
+  margin-left: 10px;
+  list-style-type: none;
+  text-indent:-50px;
+}
+#main_content ul.index ul li {
+  margin-left: -40px;
+  list-style-type: none;
+  text-indent: -25px;
+}
+#main_content ul.index li a {
+  color: #ff0099;
+}
+
+
+
+#main_content table {
+  color:#000000; 
+  font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+}
+#main_content table#tab_1 tr {
+  vertical-align:top;
+}
+#main_content span.example {
+  color: #996;
+  font-size: 95%;
+  /*font-weight: bold;*/
+}
+div.clear {
+  clear: both;
+  color: white;
+  height: 1px;
+  width: 100%;
+  margin-top: 39px;
+}
+
+/* end of main_content para keys part */
+
+
+
+/* main_content topper part */
+
+#topper {
+  position: absolute; right: 10px; bottom: 10px;
+}
+
+/* main_content topper part */
+
+
+
+/* footer part */
+#social-links {
+    display: none;
+}
+#footer {
+  font-family: Verdana;
+  background-color: white;
+  border-top: solid 3px #84b8c6;
+  border-bottom: solid 0px #FF6A00;
+  clear: both;
+  width: 100%;
+}
+#footer p {
+  color: #aabec4;
+  font-size: 10px;
+  line-height: 200%;
+  margin: 0 1em 0.5em 1em;
+  padding: 0;
+  text-align: center;
+}
+#footer p.links {
+  color: #aabec4;
+  margin: 0.5em 1em 0 1em;
+  padding: 0;
+}
+#footer a {
+  color: #aabec4;
+  font-weight: bold;
+  text-decoration: none;
+}
+#footer a:visited {}
+#footer a:hover,
+#footer a:active {
+  border-bottom: solid 1px #ff0099;
+}
+
+/* end of footer part */
+
+
+
+#QA_submit label {
+  font-weight: bold;
+}
+#main_content div.QA_pair {
+  margin: 1.5em 0;
+  padding: 0;
+}
+#main_content div.QA_pair p {
+  margin: 0.5em 0;
+  padding: 0;
+}
+#search2 {  /* "Search again" on search results page */
+  border: solid 1px #4FC6DB;
+  margin: 1em 2em;
+  padding: 0.5em;
+}
+#search2 input {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+#search_results h4.doc {
+  margin: 1.5em 0 0.5em 0;
+  padding: 0;
+}
+#search_results h4.doc span.para {
+  padding-right: 1em;
+}
+#search_results p.path {
+  margin: 0;
+  padding: 0;
+}
+#search_results p.context {
+  color: #996;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+span.target {
+  color:#000000; 
+  font-weight: bold;
+}
+#main_content div.example p {
+  color: #996;
+  font-size: 14px;
+}
+#para_key {
+  border-top: solid 3px #b4d433;
+  border-bottom: solid 3px #b4d433;
+  position: absolute; right: 19px; top: 75px;
+  width: 100px;
+  color: #626f74;
+}
+#para_key a {
+  color: #626f74;
+  display: block;
+  font-size: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  line-height: 1.25em;
+  padding: 0.5em 0;
+}
+#para_key a.here {
+  color: #ff0099;
+}
+#para_key a:link,
+#para_key a:visited {
+  border: none;
+  text-decoration: none;
+}
+#para_key a:hover,
+#para_key a:active {
+  border: none;
+  color: #ff0099;
+  text-decoration: none;
+}
+#main_content p.intoc {
+        font-family:"Microsoft Sans Serif";
+        font-size:9pt;
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:0px;
+}
+html>body #main_content p span.color {
+   	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+	font-weight: normal;  /* added */
+  	font-style: normal; /* added */
+	color: #889aa1;
+	font-size: 15px;
+}
+
+
+/*----------------------------------
+
+  The Chicago Manual of Style Online
+
+  Protected Content CSS by Eric Gamazon    
+  Application Development by Eric Gamazon
+
+  ----------------------------------*/
+#main_content div.biblio {
+	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: normal;  /* added */
+        font-style: normal; /* added */
+	font-size: 14px;
+        width:100%;
+        margin-right:0px;
+        margin-top: 0px;
+	margin-left:0px;
+}
+#main_content div.biblio div.citation {
+	line-height: 1.35em;
+	text-indent: -40px;
+	margin-left:40px;
+}
+html>body #main_content h4 {
+        color: #0BB3D0;
+        font-family: TisaWebPro-Medium, Times Roman, Times, Georgia, serif;
+        font-size: 14px;
+        font-style: italic;
+        font-weight: normal;
+        line-height: 1.35em;
+}
+
+#main_content h5 {
+        font-family: TisaWebPro-Medium, Times Roman, Times, Georgia, serif;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 1.35em;
+}
+
+#main_content li p.list_item {
+	text-indent: 0px;
+        margin-top:  0px;
+        margin-bottom:  0px;
+	font-size: 15px;
+}
+#main_content ol li {
+}
+#main_content ol {
+	font-size: 80%;
+}
+#main_content div.example {
+  	color: #626f74;          
+  	font-size: 14px;      
+        background-color: white;
+	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: normal;  /* added */
+        font-style: normal; /* added */
+        width:100%;
+ 	line-height: 1.35em;	
+}
+body.ch12 #main_content div.example{  /*"Mathematics in Type"*/ 
+	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+	font-size: 15px;
+	line-height: 1.35em;
+	color:#000000; 
+	background-color: white;
+	margin-left: 1em;
+}
+#main_content div.example table {
+        font-size:90%;
+        width:60%;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:0px;
+}
+#main_content div.example a {
+	font-weight: normal;
+}
+#main_content div.example ol {
+        font-size:100%; 
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:0px;
+}
+#main_content div.example ol li {
+	display: list-item;
+	list-style-type: decimal inside none;
+}
+#main_content div.example ul {
+        /*font-size:100%;*/
+        font-size: 14px;
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:0px;
+}
+#main_content p.defentry {
+        margin-left:20px;
+        margin-right:20px;
+        text-indent:-20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	line-height: 1.35em;
+}
+#main_content p.footnote {
+	margin-bottom:0px;
+	margin-top:0px;
+
+}
+
+/* nbtr */
+#main_content dl.hangtab {
+        background-color: white;
+        color: #626f74;
+        font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: normal;
+        font-style: normal;
+	line-height: 1.35em;
+	font-size: 14px;
+}
+#main_content dl.hangtab dd {
+        margin-left:20px; /* before was 80px */
+}
+#main_content dl.hangtab dd div.nbtr {
+        text-indent:-20px;
+}
+
+#main_content dl.nohangtab {
+        background-color: white;
+        color: #626f74;
+        font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: normal;
+        font-style: normal;
+	line-height: 1.35em;
+	font-size: 14px;
+}
+#main_content dl.nohangtab dd div.nbtr {
+        margin-left:-40px; /* before was 20px */
+        margin-right:20px;
+        text-indent:0px;
+        text-align:left;
+        margin-top:0px;
+        margin-bottom:0px;
+}
+
+#main_content dl.indenttab {
+        background-color: white;
+        color: #626f74;
+        font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.35em;
+	font-size: 14px;
+}
+#main_content dl.indenttab dd div.nbtr {
+        text-indent:20px;
+        text-align:left;
+        margin-left:-40px; /* before was 20px */
+        margin-right:20px;
+        margin-top:0px;
+        margin-bottom:0px;
+}
+/***/
+
+#main_content p#trail span.carrot {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: white;
+	color: #626f74;
+        font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: normal;  /* added */
+        font-style: normal; /* added */
+	font-size: 70%;
+	margin: 0 0.6em 0 1.0em;
+
+}
+#main_content h2#para span.mdash{
+        font-family: Arial, Times Roman, Times, Georgia, serif;
+        white-space: nowrap;
+}
+
+#main_content span.mdash{
+        font-family: Arial, "Times Roman", serif;
+        white-space: nowrap;
+	line-height: 0.6em;
+}
+
+#main_content div.example div.lineatedTextIndent {
+        text-indent: 1.2em;
+}
+#main_content div.example div.lineatedText {
+	text-indent: -1.2em;
+	margin-left: 1.2em;
+}
+#main_content div.example div.lineatedTextSubHanging {
+       text-indent: -1.2em;
+       margin-left: 2.4em;
+}
+#main_content div.example div.lineatedTextSubSubHanging {
+       text-indent: -1.2em;
+       margin-left: 3.6em;
+}
+
+#main_content small {
+ 	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+	font-size:12px;
+	letter-spacing: 1px; 
+}
+#main_content div.footnote small {
+	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+	letter-spacing: 0;
+	line-height:1.35em;
+}
+
+/* might be useless 
+#main_content ul.depth_para {
+	list-style-type: none;
+	text-indent: -40px;
+}
+*/
+
+/*#main_content ul {
+	list-style-type: none;
+	margin-left: -14px;
+	padding: 0px;
+	margin: 0px;
+}
+#main_content ul ul {
+	list-style-type: none;
+	margin-left: -14px;
+}
+#main_content div.example ul {
+	list-style-type: none;
+	margin-left: -14px;
+}
+*/
+html>body #main_content ul li {
+	list-style-image:url("../16/images/CMOS_16_Bullet_Black_Main_Text_V3.gif");
+	border: 0px red solid;
+}
+html>body #main_content div.example ul li {
+        list-style-image:url("../16/images/CMOS_16_Bullet_Gray_Example_Text_V3.gif");
+        border: 0px red solid;
+}
+
+
+#main_content table div.lineatedText {
+        text-indent:-20px;
+        margin-left: 20px;
+}
+
+body.ch16 #main_content div.lineatedTextIndent {
+        text-indent: 1.2em;
+        width: 200px;
+}
+body.ch16 #main_content div.lineatedTextNoHanging {
+        width: 200px;
+}
+
+body.ch16 #main_content div.lineatedText {
+        text-indent: -1.2em;
+        /*margin-left: 1.2em;*/
+ 	margin-left: 0;
+  	width: 200px;
+	padding-left: 1.2em;
+}
+body.ch16 #main_content div.lineatedTextSubHanging {
+        text-indent: -1.2em;
+        /*margin-left: 2.4em;*/
+	margin-left: 0;
+        width: 200px;
+	padding-left: 2.4em;
+}
+body.ch16 #main_content div.lineatedTextSubSubHanging {
+        text-indent: -1.2em;
+        /*margin-left: 3.6em;*/
+	margin-left: 0;
+        width: 200px;
+	padding-left: 3.6em;
+}
+
+
+#main_content sup, #main_content sub 
+{
+	line-height: 0%;
+	font-size: 80%;
+}
+
+
+.charge {
+	position: relative;
+	bottom: 0.5em;
+	font-size: 0.8em;
+}
+
+
+.atoms {
+	position: relative;
+	top: 0.3em;
+	font-size: 0.8em;
+}
+
+#main_content dt {
+        position: relative; 
+  	margin-bottom: -1.36em;	
+}
+#main_content dd {
+        position: relative; 
+}
+body.ch16 #main_content td {
+	vertical-align: top;
+}
+/*
+#main_content span.para_title a {
+       background-color: transparent;
+       color:#000000; 
+       border-bottom: dotted 0px #666;
+}
+#main_content span.para_title a:hover {
+      border-bottom: solid 1px #FF6A00;
+}
+*/
+#context {
+	display: none;
+}
+span.quotes {
+	font-family: Serif;
+}
+/*----------------------------------
+span.or, span.but, span.other, span.not, span.other {
+        font-weight: normal;
+        color:#000000; 
+}
+--------------------------------*/
+html>body span.inline_or, span.inline_but, span.inline_other, span.inline_not, span.inline_other {
+        background-color: white;
+        font-weight: normal;
+        color:#000000;
+        font-style: italic;
+}
+
+html>body span.or, span.but, span.other, span.not, span.other {
+        background-color: white;
+        font-weight: normal;
+        margin-left: 1em;
+        color: #000000;
+        line-height: 300%;
+        font-size: 90%;
+	font-style: italic;
+}
+
+/*
+div.example span.or, div.example span.but, div.example span.other, div.example span.not, div.example span.other {
+        font-style: italic;
+        background-color: white;
+        font-weight: normal;
+        margin-left: 1em;
+        color: #000000;
+        line-height: 300%;
+        font-size: 90%;
+}
+
+div.nbtr span.or, div.nbtr span.but, div.nbtr span.other, div.nbtr span.not, div.nbtr span.other {
+        font-style: italic;
+        background-color: white;
+        font-weight: normal;
+        margin-left: 1em;
+        color: #000000;
+        line-height: 300%;
+        font-size: 90%;
+}
+
+
+p span.or, p span.but, p span.other, p span.not, p span.other {
+        font-style: italic;
+        background-color: white;
+        font-weight: normal;
+        margin-left: 1em;
+        color: #000000;
+        line-height: 300%;
+        font-size: 90%;
+}
+*/
+span.chapter_toc {
+}
+#main_content h5.para {
+        margin: 0.5em 0;
+        color: #996;;
+        font-style: italic;
+        text-indent: 0px;
+}
+
+
+body.ch12 #main_content p img {
+        margin-left: 1em;
+}
+body.ch12 #main_content p.nav img {
+        margin-left: 0;
+}
+
+html>body #main_content p img.inline {
+	vertical-align: middle;
+        /*position: relative;
+        bottom: -2px;*/
+
+}
+body.ch12 #main_content p img.inline {
+        margin-left: 0;
+}
+
+
+
+
+/* "PDF Version" link in ch*_tab*.html and ch*_fig*.html */
+html>body #main_content span.A_link a {
+        color: #ff0099;
+        font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 80%;
+        white-space: nowrap;
+}
+#main_content span.A_link a:visited {
+  color: #bb4b81;
+}
+
+
+
+
+#main_content div.poem {
+        background-color: white;
+        color: #626f74;
+        font-size: 14px;
+	font-family: TisaWebPro-Bold, Times Roman, Times, Georgia, serif;
+        font-weight: bold;
+        line-height: 1.35em;
+        width: 100%;
+        margin-left: 24px;
+}
+
+span.typewrit {
+	font-family: Courier, Courier New, monospace;
+}
+
+nobr {
+	white-space: nowrap;
+}
+
+/* Modified for mobile version */
+
+p.proofreading {
+    padding-bottom: 12px;
+    width: 619px
+}
+
+
+
+
+
+
+/* new design */
+
+html>body #top_nav {
+  /*margin-bottom: -3px;*/
+}
+#top_nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#top_nav li {
+  float: left;
+}
+#top_nav a {
+  display: block;
+  text-decoration: none;
+}
+#top_nav img {
+  display: block;
+}
+
+
+div#mymanual {
+  background-color: #b4d433;
+  width: 136px;
+  height: 24px;
+  text-align: center;
+}
+div#mymanual a {
+  text-decoration: none;
+  border: dotted 0px #666;
+}
+div#mymanual a:hover {
+  border-bottom: solid 0px #FF6A00;
+}
+div#mymanual img {
+  margin-top: 5px;
+}
+
+/* citation page */
+#citation_tabs {
+  height: 24px;
+  /*padding: 10 0 0 0;*/
+  margin: 30px 0 16px -38px;
+}
+#citation_tabs ul {
+  list-style: none;
+}
+#main_content #citation_tabs li {
+  list-style: none;
+  float: left;
+}
+#citation_tabs a {
+  display: inline;
+  text-decoration: none;
+  border-bottom: none;
+}
+#citation_tabs img {
+  display: inline;
+} 
+
+/* on forum and intercep pages */
+#main_content div.note {
+  color: red;
+  font-size: 9px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin: 24px 0 24px 0;
+}
+
+
+/* paragraph subhead */
+html>body #main_content p span.subhead {
+color: #000000;
+font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+font-size: 13px;
+font-style: italic;
+font-weight: normal;
+letter-spacing: 0.03em; 
+line-height: 1.35em; 
+}
+
+/*FF TISA WEB PRO **Regular**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaWebPro;
+src: url(type/TisaWebPro.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaWebPro;
+src: url(type/TisaWebPro.woff);
+font-weight: normal; /* added */
+font-style: normal; /* added */
+
+}
+
+
+/*FF TISA WEB PRO **Regular Italic**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaWebPro-Italic;
+src: url(type/TisaWebPro-Italic.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaWebPro;
+src: url(type/TisaWebPro-Italic.woff);
+font-weight: normal; /* added */
+font-style: italic; /* added */
+}
+
+
+/*FF TISA WEB PRO **Regular SC**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaScWebPro;
+src: url(type/TisaScWebPro.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaScWebPro;
+src: url(type/TisaScWebPro.woff);
+}
+
+
+/*FF TISA WEB PRO **Bold**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaWebPro-Bold;
+src: url(type/TisaWebPro-Bold.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaWebPro;
+src: url(type/TisaWebPro-Bold.woff);
+font-weight: bold; /* added */
+font-style: normal; /* added */
+
+}
+
+
+/*FF TISA WEB PRO **Bold Italic**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaWebPro-BoldItalic;
+src: url(type/TisaWebPro-BoldItalic.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaWebPro;
+src: url(type/TisaWebPro-BoldItalic.woff);
+font-weight: bold; /* added */
+font-style: italic; /* added */
+}
+
+
+/*FF TISA WEB PRO **Bold SC**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaScWebPro-Bold;
+src: url(type/TisaScWebPro-Bold.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaScWebPro-Bold;
+src: url(type/TisaScWebPro-Bold.woff);
+}
+
+
+/*FF TISA WEB PRO **Medium**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaWebPro-Medium;
+src: url(type/TisaWebPro-Medium.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaWebPro-Medium;
+src: url(type/TisaWebPro-Medium.woff);
+font-weight: normal; /* added */
+font-style: normal; /* added */
+}
+
+
+/*FF TISA WEB PRO **Medium Italic**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaWebPro-MediumItalic;
+src: url(type/TisaWebPro-MediumItalic.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaWebPro-Medium;
+src: url(type/TisaWebPro-MediumItalic.woff);
+font-weight: normal; /* added */
+font-style: italic; /* added */
+}
+
+
+/*FF TISA WEB PRO **Medium SC**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaScWebPro-Medium;
+src: url(type/TisaScWebPro-Medium.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaScWebPro-Medium;
+src: url(type/TisaScWebPro-Medium.woff);
+}
+
+
+/*FF TISA WEB PRO **Italic SC**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaScWebPro-Italic;
+src: url(type/TisaScWebPro-Italic.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaScWebPro-Italic;
+src: url(type/TisaScWebPro-Italic.woff);
+font-weight: normal;
+font-style: italic;
+}
+
+
+/*FF TISA WEB PRO **Medium Italic SC**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaScWebPro-MediumItalic;
+src: url(type/TisaScWebPro-MediumItalic.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaScWebPro-MediumItalic;
+src: url(type/TisaScWebPro-MediumItalic.woff);
+font-weight: normal;
+font-style: italic;
+}
+
+
+/*FF TISA WEB PRO **Bold Italic SC**/
+/* first for IE 6/7/8 */
+@font-face {
+font-family: TisaScWebPro-BoldItalic;
+src: url(type/TisaScWebPro-BoldItalic.eot);
+}
+/* then for Mozilla browsers -> Firefox */
+@font-face {
+font-family: TisaScWebPro-BoldItalic;
+src: url(type/TisaScWebPro-BoldItalic.woff);
+font-weight: bold;
+font-style: italic;
+}
+
+/*
+ TisaWebPro, Times Roman, Times, Georgia, serif
+
+ TisaWebPro-Italic, Times Roman, Times, Georgia, serif
+
+ TisaScWebPro, Times Roman, Times, Georgia, serif
+
+ TisaWebPro-Bold, Times Roman, Times, Georgia, serif
+
+ TisaWebPro-BoldItalic, Times Roman, Times, Georgia, serif
+
+ TisaScWebPro-Bold, Times Roman, Times, Georgia, serif
+*/
+
+/* styles for colophon */
+body#clp #main_content p {
+	margin: 0 0 0.5em 0;
+}
+body#clp #main_content h3#chap {
+	color: #000;
+	font-size: 18px;
+	line-height: 2em;
+}
+body#clp #main_content p.smallcap {
+	letter-spacing: 1px;
+	margin: 1.6em 0 0.5em 0;
+	font-size: 12px;
+	font-family: TisaWebPro, Times Roman, Times, Georgia, serif;
+	font-weight: bold;
+	font-style: italic;
+}
+body#clp #main_content div.section {
+	margin-bottom: 24px;
+}
+
+/* navigation arrows */
+.rollover + a {
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nav a:first-child {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
